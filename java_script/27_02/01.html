@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onClick="message()">chama</button>
+    <p onClick="message()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit harum obcaecati iure
+        molestias?
+        Vero culpa dolorem blanditiis, animi magni aliquid enim similique id est doloribus iusto, eius earum aspernatur
+        labore?</p>
+
+    <h1 onmouseover="first()" onmouseout="last()">Eventos</h1>
+
+    <script>
+        function message() {
+            alert("evento");
+        }
+
+
+        const first = () => {
+            let objetoH1 = document.querySelector 
+            ("h1");
+                objetoH1.innerHTML="MUDA A PALAVRA"
+        };
+
+        //atv
+        const last = () => {
+            let objetoH1 = document.querySelector 
+            ("h1");
+                objetoH1.innerHTML="Evento"
+        };
+
+        
+
+    </script>
+</body>
+
+</html>

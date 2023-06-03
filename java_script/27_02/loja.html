@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOJA</title>
+</head>
+
+<body>
+    <h1 >Carrinho de Compras:</h1>
+    <h2 id="item">0</h2>
+    <button onClick="add()">Adicionar</button>
+    <br>
+    <button onClick="apagar()">Apagar</button>
+
+    <button onClick="zera()">Zerar Compras</button>
+    <script>
+        let i = 0;
+        function add() {
+
+            let item = document.querySelector('#item');
+            i++;
+            item.innerHTML = i;
+        }
+        function apagar() {
+            if (i <= 0) {
+                alert("você não tem itens adicionados");
+            } else {
+                i--;
+                item.innerHTML = i;
+            }
+        }
+        const zera = () => {
+            let item = document.querySelector('#item');
+            i = 0;
+            item.innerHTML = i;
+            
+    
+            }
+        
+
+
+    </script>
+</body>
+
+</html>
